@@ -1,0 +1,19 @@
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style-type: none;
+    margin: 10px;
+    width: 120px;
+    text-align: center
+    ;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    width: 100px;
+}
+nav li:hover::before{
+    content: "-";
+}

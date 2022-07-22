@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=Roboto+Slab&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=Roboto+Slab&family=Source+Sans+Pro&family=Ubuntu&display=swap');
+body{
+    background-color: aliceblue;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+}
+.top{
+    width: 75%;  
+    display: flex;
+    justify-content: center; 
+}
+.left{
+    width: 60%;
+    margin: 20px 0 0 70px;
+    padding-right: 50px;
+    font-family: 'Edu VIC WA NT Beginner', 'cursive';
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.left h3{
+    font-size: 4vw;
+    text-transform: capitalize;
+    padding: none;
+}
+button{
+    padding: 3px;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    width: 130px;
+    font-size: 1em;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+button:hover{
+    background-color: red;
+    color: white;
+}
+.left h3{
+    color: azure;
+}
+.left p{
+    color: azure;
+}
+.right{
+    width: 40%;
+    margin: 65px 30px 0 0;
+}
+.right img{
+    width: 100%;
+}
+.banner{
+    height: 480px;
+    background-color: rgb(22, 22, 22);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.grid{
+    margin-top: 80px;
+}
+
+.side-links a{
+    background-color: white;
+    color: black;
+    padding: 10px 0 0 0;
+    height: 30px;
+    width: 180px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.25em;
+    font-weight: 550;
+    grid-column-start: 1;
+    grid-column-end: auto;
+}
+.side-links a:hover{
+    background-color: red;
+    color: white;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-content: center;
+}
+.side-links{
+    background-color: black;
+    height: 250px;
+    width: 280px;
+    margin-right: 20px;
+    padding-top: 50px;
+    display: grid;
+    justify-content: center;
+    border-radius: 20px;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.grid-elements img{
+    width: 100%;
+}
+.grid-container p{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+span{
+    display: flex;
+    justify-content: space-around;
+}
+.view{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    visibility: hidden;
+}
+.view-all{
+    padding: 3px;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    width: 130px;
+    font-size: 1em;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+footer{
+    padding-top: 10px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+nav{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* responsive starts */
+
+@media (max-width: 420px) {
+    .banner{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 40px
+    }
+    .right{
+        margin: auto;
+    }
+    .left{
+        margin: auto;
+        width: 180px;
+        margin-left: 20px;
+    }
+    .short{
+        overflow: hidden;
+        height: 50px;
+    }
+    .short-paragraph{
+        overflow: hidden;
+    }
+    .right img{
+        width: 100%;
+        transform: scale(2);    
+    }
+    .side-links{
+        background-color: white;
+    }
+    .side-links a{
+        border: 1px solid black;
+    }
+    .grid-container{
+        grid-template-columns: 300px;
+    }
+    .view{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        visibility: visible;
+    }
+    .nav-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+ @media  (min-width: 421px) and (max-width:768px){ 
+    
+    .right img{
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .side-links{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 40px;
+        padding: 0 0;
+        display: flex;
+        margin-bottom: 50px;
+        justify-content: space-around;
+        border-radius: 20px;
+        grid-column-start: 3;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .side-links a{
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+        padding: 10px 0 0 0;
+        height: 30px;
+        width: 150px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 1em;
+        font-weight: 550;
+        grid-column-start: 1;
+        grid-column-end: auto;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        justify-content: center;
+    }
+    .view{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        visibility: visible;
+    }
+    .banner{
+        height: 700px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-left: 40px
+    }
+    .right{
+        margin: auto;
+        padding-top: 80px;
+    }
+    .left{
+        margin: auto;
+    }
+    .nav-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
